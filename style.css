@@ -133,7 +133,7 @@ padding-top: 20px;
 .article-link {
   display: block;
   margin-top: 8px;
-  color: #0028FF; /* Adjust as needed */
+  color: #0028FF; 
   text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ padding-top: 20px;
 
 .asset-card iframe {
   width: 100%;
-  height: 200px; /* Adjust as needed */
+  height: 200px;
   border: none;
 }
 
@@ -169,7 +169,7 @@ padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  width: 100%; /* Ensure container takes full width */
+  width: 100%; 
 }
 
 .asset-card {
