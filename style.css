@@ -166,9 +166,10 @@ padding-top: 20px;
 
 
 .assets-container {
+  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 26px;
   width: 100%; 
 }
 
@@ -188,7 +189,16 @@ padding-top: 20px;
 .expand-btn {
   margin-top: 8px;
 }
-
+.task-card{
+  background-color: rgb(219, 218, 218);
+  padding: 25px;
+  height: 90px;
+  font-size: 14px;
+  font-size: 12px;
+}
+.task-card p{
+  margin-bottom: 15px;
+}
 }
 .noticeBoard{
 width: 80px;
@@ -202,16 +212,36 @@ display: flex;
   width: 30px;
   border-radius: 10px 0  0 10px;
   color: white;
-  font-size: 8px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .cross p{
   text-align: center;
 }
+.notify-bar{
+  position: fixed;
+  width: 80px;
+  right: 0;
+  top: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.noticeBoard{
+  width: 90px;
+  height: 250px;
+  display: flex;
+}
 
 .notifs{
   box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3), 0px 4px 8px rgba(0, 0, 0, 0.3);
 height: 350px;
+width: 50px;
+background-color: white;
+height: 250px;
 }
 
 .menuBtn{
@@ -220,6 +250,7 @@ height: 350px;
   gap: 5px;
   display: flex;
   flex-direction: column;
+  margin-top: 160px;
 }
 
 .menuBtn button{
@@ -229,7 +260,7 @@ height: 350px;
   background-color: #0028FF;
   color: white;
   border: none;
-  
+  font-weight: 800;
 
 }
 

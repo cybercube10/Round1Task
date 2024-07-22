@@ -27,7 +27,7 @@ function createAssetCard(asset) {
     <div class="asset-card" data-asset-id="${asset.asset_id}">
      <div class="asset-head"> <h3>${asset.asset_title}</h3> 
       </div>
-      <p>${asset.asset_description}</p>
+      <p>Description: ${asset.asset_description}</p>
       ${content}
       
     </div>
