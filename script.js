@@ -1,7 +1,8 @@
 //Fetching the JSON data from local file
 async function fetchProjectData() {
   try {
-    // Path to your local JSON file
+   
+    
     const response = await fetch('ddugky_project.json');
     const data = await response.json();
     return data;
@@ -14,13 +15,13 @@ function createAssetCard(asset) {
   let content;
 
   if (asset.asset_content_type === 'video' && asset.asset_content.includes('youtube.com')) {
-    // Handle video content
+    
     content = `<iframe src="${asset.asset_content}" frameborder="0" allowfullscreen></iframe>`;
   } else if (asset.asset_content_type === 'article') {
-    // Handle article content
+   
     content = `<a href="${asset.asset_content}" target="_blank" class="article-link">Read Article</a>`;
   } else {
-    // Default case: Handle plain text or other types
+    
     content = `<div class="plain-content">${asset.asset_content}</div>`;
   }
   return `
