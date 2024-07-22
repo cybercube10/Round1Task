@@ -1,0 +1,409 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins',sans-serif;
+}
+
+nav{
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   
+ 
+}
+
+
+
+.logo-section{
+display: flex;
+align-items: center;
+}
+
+.logo-img{
+  aspect-ratio: 1;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.menu-items{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding-right: 20px;
+}
+
+
+.content{
+  display: flex;
+  width: 100%;
+  
+}
+
+.side-section {
+  position: relative;
+  width: 140px;
+  transition: width 0.3s;
+}
+
+.side-btn {
+  width: 132px;
+  height: 50px;
+  background-color: black;
+  border-radius: 0px 22px 0px 0px;
+  z-index: 100;
+  position: relative; 
+}
+
+
+.open-side {
+  border-radius: 50%;
+  height: 30px;
+  aspect-ratio: 1;
+  font-weight: 600;
+  color: white;
+  background: transparent; 
+  border: none;
+  cursor: pointer;
+  font-size: 20px; 
+}
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 500px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 20px 50px 20px 20px;
+  transition: width 0.3s;
+  z-index: 1; 
+}
+
+.side-section.expanded .side-bar {
+  width: 132px;
+}
+
+.sidebar-items {
+  list-style: none;
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.sidebar-items li {
+  margin: 10px 0;
+  font-size: 10px;
+}
+
+
+.main-section{
+  width: 1200px;
+h1{
+  margin-left: 20px;
+  color: #0028FF;
+  margin-top: -6px;
+}
+.tagline{
+  width: 1066px;
+height: 135px;
+margin-left: 20px;
+border-radius: 5px;
+background-color: #E9ECEF;
+padding: 10px 20px;
+
+}
+.content-sections{
+width: 1000px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+gap: 10px;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 20px;
+}
+.content-sections .card{
+  width: 480px;
+  height: 580px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+  border-radius: 15px;
+  
+  .head{
+    width: 480px;
+    height: 50px;
+    background-color: black;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+   align-items: center;
+    
+  }
+  .head h4{
+    color: white;
+    margin: auto;
+    font-weight: 400;
+  }
+  .desc{
+    padding: 10px 2px;
+  }
+  .desc p{
+    padding-left: 10px;
+  }
+  .desc img{
+    width: 100%;
+  }
+  .i-btn{
+    border-radius: 50%;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+  }
+  
+}
+
+.card2-more{
+  width: 478px;
+  height: 40px;
+  background-color: #FDFDF1;
+  display: flex;
+  align-items: center;
+
+}
+.card2-more div{
+  font-weight: 900;
+  font-size: 25px;
+}
+.card2-more h3{
+  margin-left: 120px;
+}
+
+.card .sub-thread{
+  width: 480px;
+  height: 98px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+.sub1,.sub2{
+  width: 199px;
+  height: 95px;
+  background-color: #F7F7F7;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.sub1 h4, .sub2 h4{
+  margin: auto;
+  font-weight: 400;
+}
+ input{
+  border-radius: 10px 10px 0 0;
+  height: 60px;
+  outline: none;
+  border: none;
+  margin-top: -5px;
+
+ }
+ input::placeholder{
+  margin-left: 5px;
+ }
+
+}
+
+.categories{
+  display: flex;
+  width: 480px;
+}
+
+.vectors{
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+.sub-threadBtn{
+  background-color: #0028FF;
+  width: 127px;
+  height: 36px;
+  color: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.summary{
+  background-color: #F7F7F7;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+ 
+  margin: auto;
+}
+
+.summary h4{
+  margin: auto;
+  font-weight: 400;
+}
+
+.summary input{
+  width: 400px;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+.formatting{
+ width: 400px;
+ margin: auto;
+}
+
+
+.Title,.cardContent{
+  padding-left: 20px;
+}
+.cardContent input{
+width: 400px;
+height: 120px;
+margin: auto;
+outline: none;
+border: none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border-radius:  4px;
+}
+.cardContent .tabs{
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  font-size: 14px;
+}
+.Title input{
+  width: 400px;
+  margin: auto;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ border-radius:  4px;
+ align-items: center;
+}
+
+
+.tools{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+}
+
+.card3-more{
+  width: 380px;
+  height: 40px;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  align-items: center;
+  margin: auto;
+ 
+}
+
+.para-desc{
+  width: 380px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 70px;
+ 
+}
+
+.card3-moreThread{
+  width: 380px;
+    height: 40px;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.ExampleDiv{
+  width: 380px;
+  height: 40px;
+border: 1px solid;
+font-weight: 600;
+
+  margin: auto;
+}
+
+.ExampleDiv h3{
+  margin: auto;
+  text-align: center;
+}
+.ExampleDesc{
+  width: 380px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+
+.notification-bar{
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  top: 5vw;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.noticeBoard{
+width: 80px;
+height: 250px;
+display: flex;
+}
+
+.cross{
+  background-color: black;
+  height: 250px;
+  width: 30px;
+  border-radius: 10px 0  0 10px;
+  color: white;
+  font-size: 8px;
+}
+
+.cross p{
+  text-align: center;
+}
+
+.notifs{
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3), 0px 4px 8px rgba(0, 0, 0, 0.3);
+height: 350px;
+}
+
+.menuBtn{
+  height: 200px;
+  width: 80px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuBtn button{
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: #0028FF;
+  color: white;
+  border: none;
+  
+
+}
+
+
