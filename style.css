@@ -125,244 +125,71 @@ padding-left: 30px;
 padding-right: 30px;
 padding-top: 20px;
 }
-.content-sections .card{
-  width: 480px;
-  height: 580px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
-  border-radius: 15px;
-  
-  .head{
-    width: 480px;
-    height: 50px;
-    background-color: black;
-    border-radius: 15px 15px 0px 0px;
-    display: flex;
-   align-items: center;
-    
-  }
-  .head h4{
-    color: white;
-    margin: auto;
-    font-weight: 400;
-  }
-  .desc{
-    padding: 10px 2px;
-  }
-  .desc p{
-    padding-left: 10px;
-  }
-  .desc img{
-    width: 100%;
-  }
-  .i-btn{
-    border-radius: 50%;
-    background-color: white;
-    width: 25px;
-    height: 25px;
-  }
-  
+
+
+
+
+.article-link {
+  display: block;
+  margin-top: 8px;
+  color: #0028FF; /* Adjust as needed */
+  text-decoration: none;
 }
 
-.card2-more{
-  width: 478px;
-  height: 40px;
-  background-color: #FDFDF1;
-  display: flex;
-  align-items: center;
-
-}
-.card2-more div{
-  font-weight: 900;
-  font-size: 25px;
-}
-.card2-more h3{
-  margin-left: 120px;
+.article-link:hover {
+  text-decoration: underline;
 }
 
-.card .sub-thread{
-  width: 480px;
-  height: 98px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- 
-}
-
-.sub1,.sub2{
-  width: 199px;
-  height: 95px;
-  background-color: #F7F7F7;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  flex-direction: column;
-}
-.sub1 h4, .sub2 h4{
-  margin: auto;
-  font-weight: 400;
-}
- input{
-  border-radius: 10px 10px 0 0;
-  height: 60px;
-  outline: none;
+.asset-card iframe {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
   border: none;
-  margin-top: -5px;
-
- }
- input::placeholder{
-  margin-left: 5px;
- }
-
 }
 
-.categories{
-  display: flex;
-  width: 480px;
-}
 
-.vectors{
-  display: flex;
-  gap: 5px;
-  list-style: none;
-}
 
-.sub-threadBtn{
-  background-color: #0028FF;
-  width: 127px;
-  height: 36px;
+.asset-head {
+  background-color: black;
   color: white;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.summary{
-  background-color: #F7F7F7;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
- 
-  margin: auto;
-}
-
-.summary h4{
-  margin: auto;
+  padding: 16px 0;
+  text-align: center; 
+  border-radius: 10px 10px 0;
   font-weight: 400;
-}
-
-.summary input{
-  width: 400px;
-  margin: auto;
-  border-radius: 10px 10px 0 0;
-  height: 40px;
-  outline: none;
-  border: none;
-}
-
-.formatting{
- width: 400px;
- margin: auto;
+  margin-top: -16px;
+  
 }
 
 
-.Title,.cardContent{
-  padding-left: 20px;
-}
-.cardContent input{
-width: 400px;
-height: 120px;
-margin: auto;
-outline: none;
-border: none;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-border-radius:  4px;
-}
-.cardContent .tabs{
-  display: flex;
-  list-style: none;
-  gap: 5px;
-  font-size: 14px;
-}
-.Title input{
-  width: 400px;
-  margin: auto;
-  outline: none;
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
- border-radius:  4px;
- align-items: center;
-}
 
 
-.tools{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  list-style: none;
+
+
+.assets-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%; /* Ensure container takes full width */
 }
 
-.card3-more{
-  width: 380px;
-  height: 40px;
-  background-color: rgb(180, 180, 180);
-  display: flex;
-  align-items: center;
-  margin: auto;
- 
+.asset-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
-.para-desc{
-  width: 380px;
-  height: 40px;
-  margin: auto;
-  margin-bottom: 70px;
- 
+.asset-content {
+  margin-top: 8px;
 }
 
-.card3-moreThread{
-  width: 380px;
-    height: 40px;
-  background-color: rgb(209, 209, 209);
-  display: flex;
-  align-items: center;
-  margin: auto;
+.expand-btn {
+  margin-top: 8px;
 }
 
-.ExampleDiv{
-  width: 380px;
-  height: 40px;
-border: 1px solid;
-font-weight: 600;
-
-  margin: auto;
 }
-
-.ExampleDiv h3{
-  margin: auto;
-  text-align: center;
-}
-.ExampleDesc{
-  width: 380px;
-  height: 40px;
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 20px;
-}
-
-
-.notification-bar{
-  position: fixed;
-  width: 80px;
-  height: 100%;
-  top: 5vw;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .noticeBoard{
 width: 80px;
 height: 250px;
@@ -406,4 +233,8 @@ height: 350px;
 
 }
 
+
+.asset-card p{
+ margin-left: 10px;
+}
 
